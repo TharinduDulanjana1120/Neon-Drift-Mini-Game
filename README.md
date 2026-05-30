@@ -290,8 +290,8 @@ Key design choices:
 
 ## 📜 License
 
-This is your project — do whatever you like with it. The codebase contains no copyrighted assets, fonts, or third-party media.
+All rights reserved to TharinduX.exe
 
 ---
 
-Built with 💜 in Flutter. Have fun shipping it!
+

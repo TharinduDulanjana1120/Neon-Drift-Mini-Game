@@ -1,0 +1,41 @@
+name: neondriftmini
+description: "Neon Drift Mini — a neon-themed top-down endless car racing mini-game built with pure Flutter."
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# Game version. Bumped on every release.
+# Format:  semantic_version+build_number
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Lightweight local key-value storage for high score persistence.
+  shared_preferences: ^2.2.2
+
+  # iOS-style icons (already bundled with Flutter, kept for parity).
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1     # ← ADD THIS
+
+
+# Configuration for the icon generator
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false                          # set to true if you also want iOS
+  image_path: "assets/icon.png"       # path to your image
+  min_sdk_android: 21
+  adaptive_icon_background: "#0A0014" # dark BG (matches game theme)
+  adaptive_icon_foreground: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png                 # ← ADD THIS so app can also use the image
